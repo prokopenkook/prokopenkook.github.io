@@ -47,6 +47,72 @@ img{
   height: 300px;
   overflow: hidden;
 }
+.nav-row{
+  height: 80px;
+  background-color: $color-white;
+  padding-top: 20px;
+  .container{
+    display: flex;
+  }
+  .header__top__logo{
+    flex: 0 0 180px;
+    padding-top: 5px;
+    @media (max-width: 768px){
+      flex: 1 1 auto;
+      img{
+        max-width: 150px;
+      }
+    }
+  }
+  .header__top__nav{
+    flex: 1 1 auto;
+    padding-top: 10px;
+  }
+  .nav{
+    text-align: right;
+    @media (max-width: 768px){
+      position: absolute;
+      background: rgba(0, 0, 0, .9);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      padding-top: 100px;
+      display: none;
+      z-index: 999;
+      &.active{
+
+      }
+    }
+    .nav__item{
+      display: inline-block;
+      @media (max-width: 768px){
+        display: block;
+        text-align: center;
+        padding: 20px 10px;
+        user-select: none;
+      }
+      a{
+        font-size: 12px;
+        padding: 0 20px;
+        color: $color-light;
+        text-transform: uppercase;
+        @media (max-width: 992px){
+          padding: 0 10px;
+        }
+        @media (max-width: 768px){
+          color: $color-white;
+          font-size: 14px;
+        }
+        &:hover{
+          text-decoration: none;
+          color: $color-blue;
+        }
+      }
+    }
+  }
+}
 
 // video
 .block-mask-video{
