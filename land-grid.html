@@ -205,6 +205,35 @@
             saepe sed veritatis.</p>
         <p>A accusamus adipisci aliquam aspernatur corporis esse est expedita incidunt ipsam itaque libero minima modi neque
             nesciunt nobis odit placeat qui quis ratione reprehenderit sed tempore tenetur, vel velit vitae?</p>
+        <form class="contact_form" action="contact-form.php" method="post">
+            <p>
+                <label for="name">Имя:</label>
+                <input type="text"  name="name" placeholder="Введите ваше имя" required />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Введите электронный адрес" required />
+                <span class="form_hint">Правильный формат "name@something.com"</span>
+            </p>
+            <p>
+                <label for="tel">Телефон:</label>
+                <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+                <span class="form_hint">Правильный формат "+7-123-4567890"</span>
+            </p>
+            <p>
+                <label for="website">Сайт:</label>
+                <input type="url" name="website" placeholder="Введите адрес вашего сайта" pattern="(http|https)://.+"/>
+                <span class="form_hint">Правильный формат "http://someaddress.com"</span>
+            </p>
+            <p>
+                <label for="message">Текст сообщения:</label>
+                <textarea name="message" cols="40" rows="6" required ></textarea>
+            </p>
+            <input name="bezspama" type="text" style="display:none" value="" />
+            <p>
+                <button class="submit" type="submit">Отправить сообщение</button>
+            </p>
+        </form>
     </div>
 </section>
 <section class="photo">
