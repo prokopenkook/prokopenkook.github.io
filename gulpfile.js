@@ -60,3 +60,4 @@ gulp.task('watch', ['concat', 'sass'], function () {
 });
 
 
+gulp.task('default', ['watch']);

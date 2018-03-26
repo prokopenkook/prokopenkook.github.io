@@ -112,6 +112,10 @@ img{
       }
     }
   }
+  .header__bottom{
+    background: url( $url + "header.jpg") no-repeat center / cover;
+    height: 600px;
+  }
 }
 
 // video
