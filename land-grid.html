@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Always travel</title>
+    <title>Creative team</title>
     <link href="css/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -18,16 +18,19 @@
                 <span></span>
             </div>
             <div class="header__top__nav nav">
-                <div class="nav__item"><a href="#home" class="nav__item__link">Home</a></div>
-                <div class="nav__item"><a href="#About" class="nav__item__link">About</a></div>
-                <div class="nav__item"><a href="#plan" class="nav__item__link">Let's plan</a></div>
-                <div class="nav__item"><a href="#Information" class="nav__item__link">Information</a></div>
-                <div class="nav__item"><a href="#WhoWeAre" class="nav__item__link">Who We Are</a></div>
+                <div class="nav__item"><a href="#home" class="nav__item__link nav__item__link__js">Home</a></div>
+                <div class="nav__item"><a href="#Information" class="nav__item__link nav__item__link__js">Information</a></div>
+                <div class="nav__item"><a href="#About" class="nav__item__link nav__item__link__js">About</a></div>
+                <div class="nav__item"><a href="#Portfolio" class="nav__item__link nav__item__link__js">Portfolio</a></div>
             </div>
         </div>
     </div>
-    <div class="header__bottom">
-        <h1>Portfolio</h1>
+    <div class="header__bottom parallax">
+        <div class="container vh-100 flex-vertical">
+            <h1 class="title-big title-white">Think Different</h1>
+            <h2 class="title-medium title-white">Do creative with our team</h2>
+            <a href="#Information" class="btn btn-round btn-white margin-30 nav__item__link__js">Get started</a>
+        </div>
     </div>
     <!--<div class="block-mask-video">
         <video muted="" autoplay="" loop="">
@@ -45,7 +48,7 @@
         </svg>
     </div>-->
 </header>
-<section class="info">
+<section class="info" id="Information">
     <div class="container grid">
         <div class="grid__item info__item">
             <div class="info__item__img">
@@ -189,7 +192,7 @@
         </div>
     </div>
 </section>
-<section class="about">
+<section class="about" id="About">
     <div class="container">
         <h2 class="title">About us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus ea excepturi ipsum non nostrum
@@ -245,7 +248,7 @@
         </form>-->
     </div>
 </section>
-<section class="photo">
+<section class="photo" id="Portfolio">
     <h2 class="title">Portfolio</h2>
     <div class="container grid grid-dif">
         <div class="grid__item span-column-2 photo__item">
@@ -274,7 +277,12 @@
         </div>
     </div>
 </section>
-<footer>
+<footer class="text-center">
+    <div class="container flex-vertical">
+        <h2 class="title">Contact</h2>
+        <div class="footer__item">example-demo@demo.com</div>
+        <div class="footer__item">+38 (098) 000-00-00</div>
+    </div>
 
 </footer>
 <script src="js/jquery-2.1.1.js" type="text/javascript"></script>

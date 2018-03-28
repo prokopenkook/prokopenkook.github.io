@@ -2,13 +2,13 @@ $(document).ready(function() {
     /* Parallax */
     parallaxTop = $('.parallax').offset(top);
     $('.parallax').css({
-        "background-position-y": parallaxTop
+        "background-position": "bottom center"
     });
 
     $(window).scroll(function () {
         scrollT = $(window).scrollTop();
         $('.parallax').css({
-            "background-position-y": -scrollT / 5
+            "background-position": "bottom " + (-scrollT / 2.5) + "px center"
         });
 
         //scroll to top
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     });
     var nav = $('.header .nav');
-    $('.nav__item__link').click(function (event) {
+    $('.nav__item__link__js').click(function (event) {
         event.preventDefault();
         var idLink  = $(this).attr('href'),
             topOffset = $(idLink).offset().top;
